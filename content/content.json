@@ -33,49 +33,571 @@
     "fontBody": "DM Sans"
   },
   "sections": [
-    {"id":"snapshot","label":"Professional snapshot","title":"Curious about the why behind the number.","subtitle":"My work sits where structured thinking meets human context: finding the pattern, understanding the business, and making the next decision clearer.","visible":true,"blocks":[{"type":"cards","items":[{"title":"Data Analytics","body":"Python · SQL · Pandas · Statistics","tone":"navy"},{"title":"Business Analysis","body":"KPI Analysis · BI · Process Thinking","tone":"coral"},{"title":"Finance","body":"Statements · Ratios · Markets · Valuation","tone":"cream"},{"title":"Technology","body":"Python · APIs · Git · Machine Learning","tone":"sage"}]}]},
-    {"id":"about","label":"About me","title":"Learning to make the complex clear.","subtitle":"","visible":true,"blocks":[{"type":"text","text":"{{aboutIntro}}"},{"type":"list","items":["Currently: Computer Science Student","Focus: Data · Business · Finance","Building: Projects · Case Studies","Learning: {{currentLearning}}"]}]},
-    {"id":"skills","label":"Capability map","title":"Skills in motion.","subtitle":"Skills are a living system. Current, learning, and future directions evolve as the work does.","visible":true,"blocks":[{"type":"skills"}]},
-    {"id":"thinking","label":"Analytical thinking","title":"From question to decision.","subtitle":"A repeatable way to move through ambiguity, without losing sight of the person or business behind the data.","visible":true,"blocks":[{"type":"process","items":["Business problem","Data","Cleaning","Analysis","Insights","Decision"]}]},
-    {"id":"projects","label":"Selected work","title":"Turning data into analysis and decisions.","subtitle":"Projects where I practice moving from a question to a useful point of view.","visible":true,"blocks":[{"type":"projects"}]},
-    {"id":"lab","label":"Educational / demonstration tools","title":"Analytics Lab.","subtitle":"Small tools for making analytical thinking tangible. Inputs are local and for demonstration only.","visible":true,"blocks":[{"type":"calculators"}]},
-    {"id":"case-study","label":"Portfolio demonstration","title":"Revenue dropped 12%. Why?","subtitle":"A business case study about investigating a revenue change without assuming the answer.","visible":true,"blocks":[{"type":"text","text":"Revenue = Customers × Transactions × Average Order Value"},{"type":"list","items":["Key finding: Investigation in progress.","Business insight: Segment the change before choosing an action.","Recommendation: Compare retention, pricing, product mix, and seasonality.","KPI to monitor: Retention · AOV · Conversion"]}]},
-    {"id":"finance","label":"Finance & markets","title":"Understanding the story behind a company.","subtitle":"I am interested in understanding companies, financial markets, valuation, and how data supports financial decision-making.","visible":true,"blocks":[{"type":"cards","items":[{"title":"Company analysis","body":"Revenue · Profit · Margins · Growth · Debt · Cash Flow"},{"title":"Financial ratios","body":"ROE · ROA · EPS · Debt-to-Equity · Net Margin"},{"title":"Valuation","body":"DCF Concepts · Multiples · Enterprise Value · Equity Value"},{"title":"Markets","body":"Returns · Volatility · Risk · Market Trends"}]},{"type":"text","text":"Educational analysis · Not investment advice"}]},
-    {"id":"insights","label":"Notes from the work","title":"Insights.","subtitle":"Methodology notes and observations will be added as the work develops.","visible":true,"blocks":[{"type":"insights"}]},
-    {"id":"resume","label":"Resume","title":"A work in progress, by design.","subtitle":"Experience, education, certifications, and the projects that show how I think.","visible":true,"blocks":[{"type":"resume"}]},
-    {"id":"contact","label":"Open to connection","title":"Let's build something meaningful.","subtitle":"Interested in analytics, business, finance, or technology? Let's connect.","visible":true,"blocks":[{"type":"contact"}]}
+    {
+      "id": "snapshot",
+      "label": "Professional snapshot",
+      "title": "Curious about the why behind the number.",
+      "subtitle": "My work sits where structured thinking meets human context: finding the pattern, understanding the business, and making the next decision clearer.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Data Analytics",
+              "body": "Python · SQL · Pandas · Statistics",
+              "tone": "navy"
+            },
+            {
+              "title": "Business Analysis",
+              "body": "KPI Analysis · BI · Process Thinking",
+              "tone": "coral"
+            },
+            {
+              "title": "Finance",
+              "body": "Statements · Ratios · Markets · Valuation",
+              "tone": "cream"
+            },
+            {
+              "title": "Technology",
+              "body": "Python · APIs · Git · Machine Learning",
+              "tone": "sage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "About me",
+      "title": "Learning to make the complex clear.",
+      "subtitle": "",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "{{aboutIntro}}"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Currently: Computer Science Student",
+            "Focus: Data · Business · Finance",
+            "Building: Projects · Case Studies",
+            "Learning: {{currentLearning}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Capability map",
+      "title": "Skills in motion.",
+      "subtitle": "Skills are a living system. Current, learning, and future directions evolve as the work does.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "skills"
+        }
+      ]
+    },
+    {
+      "id": "thinking",
+      "label": "Analytical thinking",
+      "title": "From question to decision.",
+      "subtitle": "A repeatable way to move through ambiguity, without losing sight of the person or business behind the data.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "process",
+          "items": [
+            "Business problem",
+            "Data",
+            "Cleaning",
+            "Analysis",
+            "Insights",
+            "Decision"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "label": "Selected work",
+      "title": "Turning data into analysis and decisions.",
+      "subtitle": "Projects where I practice moving from a question to a useful point of view.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "projects"
+        }
+      ]
+    },
+    {
+      "id": "lab",
+      "label": "Educational / demonstration tools",
+      "title": "Analytics Lab.",
+      "subtitle": "Small tools for making analytical thinking tangible. Inputs are local and for demonstration only.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "calculators"
+        }
+      ]
+    },
+    {
+      "id": "case-study",
+      "label": "Portfolio demonstration",
+      "title": "Revenue dropped 12%. Why?",
+      "subtitle": "A business case study about investigating a revenue change without assuming the answer.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Revenue = Customers × Transactions × Average Order Value"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Key finding: Investigation in progress.",
+            "Business insight: Segment the change before choosing an action.",
+            "Recommendation: Compare retention, pricing, product mix, and seasonality.",
+            "KPI to monitor: Retention · AOV · Conversion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "label": "Finance & markets",
+      "title": "Understanding the story behind a company.",
+      "subtitle": "I am interested in understanding companies, financial markets, valuation, and how data supports financial decision-making.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Company analysis",
+              "body": "Revenue · Profit · Margins · Growth · Debt · Cash Flow"
+            },
+            {
+              "title": "Financial ratios",
+              "body": "ROE · ROA · EPS · Debt-to-Equity · Net Margin"
+            },
+            {
+              "title": "Valuation",
+              "body": "DCF Concepts · Multiples · Enterprise Value · Equity Value"
+            },
+            {
+              "title": "Markets",
+              "body": "Returns · Volatility · Risk · Market Trends"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Educational analysis · Not investment advice"
+        }
+      ]
+    },
+    {
+      "id": "insights",
+      "label": "Notes from the work",
+      "title": "Insights.",
+      "subtitle": "Methodology notes and observations will be added as the work develops.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "insights"
+        }
+      ]
+    },
+    {
+      "id": "resume",
+      "label": "Resume",
+      "title": "A work in progress, by design.",
+      "subtitle": "Experience, education, certifications, and the projects that show how I think.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "resume"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Open to connection",
+      "title": "Let's build something meaningful.",
+      "subtitle": "Interested in analytics, business, finance, or technology? Let's connect.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "contact"
+        }
+      ]
+    },
+    {
+      "id": "section-1793212454315-copy",
+      "label": "New section copy",
+      "title": "New section title",
+      "subtitle": "Add a short description.",
+      "visible": true,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Add content here."
+        }
+      ]
+    }
   ],
   "skills": [
-    {"id":"python","name":"Python","category":"Data Analytics","status":"Current","description":"Working with data, automation, and analytical workflows.","projects":["sales-performance","vehicle-parking"]},
-    {"id":"sql","name":"SQL","category":"Data Analytics","status":"Current","description":"Querying, shaping, and interpreting structured data.","projects":["sales-performance","revenue-analytics"]},
-    {"id":"pandas","name":"Pandas","category":"Data Analytics","status":"Current","description":"Data cleaning, transformation, and exploratory analysis.","projects":["sales-performance","revenue-analytics"]},
-    {"id":"statistics","name":"Statistics","category":"Data Analytics","status":"Learning","description":"Building stronger foundations for evidence-led decisions.","projects":[]},
-    {"id":"kpi","name":"KPI Analysis","category":"Business Analysis","status":"Current","description":"Connecting business questions to measurable signals.","projects":["sales-performance","revenue-analytics"]},
-    {"id":"requirements","name":"Requirements Analysis","category":"Business Analysis","status":"Learning","description":"Translating stakeholder needs into clear analytical work.","projects":[]},
-    {"id":"powerbi","name":"Power BI","category":"Visualization","status":"Learning","description":"Designing clear, decision-oriented dashboards.","projects":["sales-performance","revenue-analytics"]},
-    {"id":"excel","name":"Excel","category":"Visualization","status":"Current","description":"Fast analysis, modeling, and communication of findings.","projects":["sales-performance","revenue-analytics"]},
-    {"id":"financial-analysis","name":"Financial Analysis","category":"Finance","status":"Learning","description":"Reading company performance through financial statements and ratios.","projects":["company-notes"]},
-    {"id":"valuation","name":"Valuation Concepts","category":"Finance","status":"Future","description":"Exploring DCF, multiples, enterprise value, and equity value.","projects":[]},
-    {"id":"git","name":"Git","category":"Technology","status":"Current","description":"Keeping analytical work reproducible and versioned.","projects":["vehicle-parking"]},
-    {"id":"machine-learning","name":"Machine Learning","category":"Technology","status":"Future","description":"A future direction for predictive analytical solutions.","projects":[]}
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Data Analytics",
+      "status": "Current",
+      "description": "Working with data, automation, and analytical workflows.",
+      "projects": [
+        "sales-performance",
+        "vehicle-parking"
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "Data Analytics",
+      "status": "Current",
+      "description": "Querying, shaping, and interpreting structured data.",
+      "projects": [
+        "sales-performance",
+        "revenue-analytics"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "Data Analytics",
+      "status": "Current",
+      "description": "Data cleaning, transformation, and exploratory analysis.",
+      "projects": [
+        "sales-performance",
+        "revenue-analytics"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "category": "Data Analytics",
+      "status": "Learning",
+      "description": "Building stronger foundations for evidence-led decisions.",
+      "projects": []
+    },
+    {
+      "id": "kpi",
+      "name": "KPI Analysis",
+      "category": "Business Analysis",
+      "status": "Current",
+      "description": "Connecting business questions to measurable signals.",
+      "projects": [
+        "sales-performance",
+        "revenue-analytics"
+      ]
+    },
+    {
+      "id": "requirements",
+      "name": "Requirements Analysis",
+      "category": "Business Analysis",
+      "status": "Learning",
+      "description": "Translating stakeholder needs into clear analytical work.",
+      "projects": []
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "category": "Visualization",
+      "status": "Learning",
+      "description": "Designing clear, decision-oriented dashboards.",
+      "projects": [
+        "sales-performance",
+        "revenue-analytics"
+      ]
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "category": "Visualization",
+      "status": "Current",
+      "description": "Fast analysis, modeling, and communication of findings.",
+      "projects": [
+        "sales-performance",
+        "revenue-analytics"
+      ]
+    },
+    {
+      "id": "financial-analysis",
+      "name": "Financial Analysis",
+      "category": "Finance",
+      "status": "Learning",
+      "description": "Reading company performance through financial statements and ratios.",
+      "projects": [
+        "company-notes"
+      ]
+    },
+    {
+      "id": "valuation",
+      "name": "Valuation Concepts",
+      "category": "Finance",
+      "status": "Future",
+      "description": "Exploring DCF, multiples, enterprise value, and equity value.",
+      "projects": []
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "Technology",
+      "status": "Current",
+      "description": "Keeping analytical work reproducible and versioned.",
+      "projects": [
+        "vehicle-parking"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "category": "Technology",
+      "status": "Future",
+      "description": "A future direction for predictive analytical solutions.",
+      "projects": []
+    }
   ],
   "projects": [
-    {"id":"vehicle-parking","title":"Online Vehicle Parking Reservation System","category":"Technology","status":"Completed","description":"A Django-based web application for managing parking locations, floors, vehicles, parking capacity, and reservations.","problem":"Manage parking availability and reservations reliably.","objective":"Support customer and admin workflows for vehicle registration, reservations, and booking status.","dataset":"Application database.","methodology":"Django application with MySQL persistence, date/time availability, validation, and concurrency handling.","insights":"Developed as a database-driven web application. No public results are claimed.","tools":["Python","Django","MySQL","HTML","CSS","JavaScript"],"skills":["Python","Django","MySQL"],"tags":["Web Application","Reservations","Database"],"githubUrl":"","reportUrl":"","date":"2026-01-01"},
-    {"id":"sales-performance","title":"Sales Performance Analysis","category":"Data","status":"In Progress","description":"A structured exploration of revenue, customers, and product performance to find the signals behind growth.","problem":"What patterns explain changes in sales performance?","objective":"Build a decision-ready analytical view of sales activity.","dataset":"Source to be documented.","methodology":"Clean, segment, compare, visualize, and translate patterns into business questions.","insights":"Analysis in progress.","tools":["Python","NumPy","Pandas","SQL","Excel","Power BI"],"skills":["Python","SQL","KPI Analysis"],"tags":["Revenue","KPI","EDA"],"githubUrl":"","reportUrl":"","date":"2026-08-01"},
-    {"id":"revenue-analytics","title":"Revenue Analytics Project","category":"Business","status":"In Progress","description":"An analytical project focused on revenue, sales, customer, and product data.","problem":"What business trends and growth drivers appear in revenue data?","objective":"Transform raw business data into actionable insights.","dataset":"Source to be documented.","methodology":"Use Python, NumPy, Pandas, SQL, Excel, and Power BI for analysis and visualization.","insights":"Analysis in progress.","tools":["Python","NumPy","Pandas","SQL","Excel","Power BI"],"skills":["Python","Pandas","KPI Analysis"],"tags":["Revenue","Business Analysis","BI"],"githubUrl":"","reportUrl":"","date":"2026-08-15"},
-    {"id":"company-notes","title":"Company Analysis Notes","category":"Finance","status":"Planned","description":"A living research notebook for understanding a company through performance, business model, and financial ratios.","problem":"How can public financial information become a clear company narrative?","objective":"Practice structured financial analysis without presenting investment advice.","dataset":"Public company filings or another documented source.","methodology":"Review statements, calculate ratios, compare periods, and document assumptions.","insights":"Analysis will be documented after the source company is selected.","tools":["Excel","Financial Statements"],"skills":["Financial Analysis"],"tags":["Ratios","Markets","Research"],"githubUrl":"","reportUrl":"","date":"2026-09-01"}
+    {
+      "id": "vehicle-parking",
+      "title": "Online Vehicle Parking Reservation System",
+      "category": "Technology",
+      "status": "Completed",
+      "description": "A Django-based web application for managing parking locations, floors, vehicles, parking capacity, and reservations.",
+      "problem": "Manage parking availability and reservations reliably.",
+      "objective": "Support customer and admin workflows for vehicle registration, reservations, and booking status.",
+      "dataset": "Application database.",
+      "methodology": "Django application with MySQL persistence, date/time availability, validation, and concurrency handling.",
+      "insights": "Developed as a database-driven web application. No public results are claimed.",
+      "tools": [
+        "Python",
+        "Django",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "skills": [
+        "Python",
+        "Django",
+        "MySQL"
+      ],
+      "tags": [
+        "Web Application",
+        "Reservations",
+        "Database"
+      ],
+      "githubUrl": "",
+      "reportUrl": "",
+      "date": "2026-01-01"
+    },
+    {
+      "id": "sales-performance",
+      "title": "Sales Performance Analysis",
+      "category": "Data",
+      "status": "In Progress",
+      "description": "A structured exploration of revenue, customers, and product performance to find the signals behind growth.",
+      "problem": "What patterns explain changes in sales performance?",
+      "objective": "Build a decision-ready analytical view of sales activity.",
+      "dataset": "Source to be documented.",
+      "methodology": "Clean, segment, compare, visualize, and translate patterns into business questions.",
+      "insights": "Analysis in progress.",
+      "tools": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "KPI Analysis"
+      ],
+      "tags": [
+        "Revenue",
+        "KPI",
+        "EDA"
+      ],
+      "githubUrl": "",
+      "reportUrl": "",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "revenue-analytics",
+      "title": "Revenue Analytics Project",
+      "category": "Business",
+      "status": "In Progress",
+      "description": "An analytical project focused on revenue, sales, customer, and product data.",
+      "problem": "What business trends and growth drivers appear in revenue data?",
+      "objective": "Transform raw business data into actionable insights.",
+      "dataset": "Source to be documented.",
+      "methodology": "Use Python, NumPy, Pandas, SQL, Excel, and Power BI for analysis and visualization.",
+      "insights": "Analysis in progress.",
+      "tools": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "skills": [
+        "Python",
+        "Pandas",
+        "KPI Analysis"
+      ],
+      "tags": [
+        "Revenue",
+        "Business Analysis",
+        "BI"
+      ],
+      "githubUrl": "",
+      "reportUrl": "",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "company-notes",
+      "title": "Company Analysis Notes",
+      "category": "Finance",
+      "status": "Planned",
+      "description": "A living research notebook for understanding a company through performance, business model, and financial ratios.",
+      "problem": "How can public financial information become a clear company narrative?",
+      "objective": "Practice structured financial analysis without presenting investment advice.",
+      "dataset": "Public company filings or another documented source.",
+      "methodology": "Review statements, calculate ratios, compare periods, and document assumptions.",
+      "insights": "Analysis will be documented after the source company is selected.",
+      "tools": [
+        "Excel",
+        "Financial Statements"
+      ],
+      "skills": [
+        "Financial Analysis"
+      ],
+      "tags": [
+        "Ratios",
+        "Markets",
+        "Research"
+      ],
+      "githubUrl": "",
+      "reportUrl": "",
+      "date": "2026-09-01"
+    }
   ],
   "certifications": [
-    {"title":"Certified Implementation Specialist – Data Foundations (CIS-DF)","issuer":"ServiceNow","date":"2026","credentialUrl":"","status":"Completed"},
-    {"title":"Agile Project Management Certification","issuer":"HP","date":"","credentialUrl":"","status":"Completed"}
+    {
+      "title": "Certified Implementation Specialist – Data Foundations (CIS-DF)",
+      "issuer": "ServiceNow",
+      "date": "2026",
+      "credentialUrl": "",
+      "status": "Completed"
+    },
+    {
+      "title": "Agile Project Management Certification",
+      "issuer": "HP",
+      "date": "",
+      "credentialUrl": "",
+      "status": "Completed"
+    }
   ],
   "insights": [
-    {"slug":"how-i-approach-analysis","title":"How I approach an analytical question","type":"Methodology","date":"2026-09-01","excerpt":"A short note on moving from a business question to a useful analytical frame.","status":"Draft"}
+    {
+      "slug": "how-i-approach-analysis",
+      "title": "How I approach an analytical question",
+      "type": "Methodology",
+      "date": "2026-09-01",
+      "excerpt": "A short note on moving from a business question to a useful analytical frame.",
+      "status": "Draft"
+    }
   ],
   "calculators": {
-    "revenue":{"title":"Revenue analyzer","description":"Explore profit, margin, and a simple growth forecast.","inputs":[{"id":"revenue","label":"Revenue","value":100000},{"id":"expenses","label":"Expenses","value":75200},{"id":"growth","label":"Growth %","value":18.4}]},
-    "kpi":{"title":"KPI analyzer","description":"Review conversion, retention, and customer acquisition cost signals.","inputs":[{"id":"conversion","label":"Conversion %","value":3.2},{"id":"retention","label":"Retention %","value":68},{"id":"cac","label":"CAC","value":42}]},
-    "ratios":{"title":"Financial ratio analyzer","description":"Calculate ROA, ROE, and debt-to-equity from supported inputs.","inputs":[{"id":"netIncome","label":"Net income","value":18000},{"id":"assets","label":"Assets","value":100000},{"id":"equity","label":"Equity","value":60000},{"id":"debt","label":"Debt","value":40000}]}
+    "revenue": {
+      "title": "Revenue analyzer",
+      "description": "Explore profit, margin, and a simple growth forecast.",
+      "inputs": [
+        {
+          "id": "revenue",
+          "label": "Revenue",
+          "value": 100000
+        },
+        {
+          "id": "expenses",
+          "label": "Expenses",
+          "value": 75200
+        },
+        {
+          "id": "growth",
+          "label": "Growth %",
+          "value": 18.4
+        }
+      ]
+    },
+    "kpi": {
+      "title": "KPI analyzer",
+      "description": "Review conversion, retention, and customer acquisition cost signals.",
+      "inputs": [
+        {
+          "id": "conversion",
+          "label": "Conversion %",
+          "value": 3.2
+        },
+        {
+          "id": "retention",
+          "label": "Retention %",
+          "value": 68
+        },
+        {
+          "id": "cac",
+          "label": "CAC",
+          "value": 42
+        }
+      ]
+    },
+    "ratios": {
+      "title": "Financial ratio analyzer",
+      "description": "Calculate ROA, ROE, and debt-to-equity from supported inputs.",
+      "inputs": [
+        {
+          "id": "netIncome",
+          "label": "Net income",
+          "value": 18000
+        },
+        {
+          "id": "assets",
+          "label": "Assets",
+          "value": 100000
+        },
+        {
+          "id": "equity",
+          "label": "Equity",
+          "value": 60000
+        },
+        {
+          "id": "debt",
+          "label": "Debt",
+          "value": 40000
+        }
+      ]
+    }
   },
-  "footer": {"tagline":"Data Analyst · Business Analyst · Finance Enthusiast","copyright":"© 2026 Pothagani Nithyya Bharghava","strapline":"Data → Insight → Business → Finance → Decision"}
+  "footer": {
+    "tagline": "Data Analyst · Business Analyst · Finance Enthusiast",
+    "copyright": "© 2026 Pothagani Nithyya Bharghava",
+    "strapline": "Data → Insight → Business → Finance → Decision"
+  }
 }
