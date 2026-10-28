@@ -1,0 +1,66 @@
+Full Name:Pothagani Nithyya bharghava
+Phone:9490430869
+Email:nithyyabharghava@gmail.com
+LinkedIn:www.linkedin.com/in/nithyya-bharghava-pothagani-6a4baa265
+GitHub:https://github.com/NB355
+Portfolio:https://nb355.github.io/
+
+CGPA:6.4 ,tkr college of enginnering and technlogy
+10th %:10.0,lords talent high school
+12th/Diploma %:70 sri chaitanya educational institutions
+
+Internships:
+1.
+2.
+
+Projects:
+1. Online Vehicle Parking Reservation System
+
+Technologies: Python, Django, MySQL, HTML, CSS, JavaScript
+
+Developed a Django-based web application for managing parking locations, floors, vehicles, parking capacity, and reservations.
+Implemented date/time-based parking availability and booking with admin-controlled floor capacity.
+Designed admin and customer workflows for parking management, vehicle registration, reservations, and booking status.
+Implemented reservation validation and concurrency handling to prevent overbooking during simultaneous booking attempts.
+Integrated MySQL for persistent application data and database-driven parking management.
+
+2.Sales Performance Analysis
+Analyzed sales, revenue, customer, and product-level data to identify key performance trends and growth drivers.
+Evaluated business KPIs and sales patterns to identify high-performing products, customer segments, and revenue opportunities.
+Used data analysis and visualization to transform raw business data into actionable insights for decision-making.
+Technologies: Python, Pandas, SQL, Excel/Power BI
+3.
+Certifications:
+1.Certified Implementation Specialist – Data Foundations (CMDB and CSDM) (CIS-DF) — ServiceNow, 2026
+2.Agile Project Management Certification — HP
+
+3.Revenue Analytics Project
+Analyzed revenue, sales, customer, and product data to identify key trends and business growth drivers.
+Evaluated KPIs and performance metrics to identify high-performing products, customer segments, and revenue opportunities.
+Transformed raw business data into actionable insights to support data-driven decision-making.
+Technologies: Python, Pandas, SQL, Excel/Power BI
+
+Achievements:
+1.Selected/participated in the McKinsey Forward Program.
+2.Finalist – 36-Hour Hackathon, TKR College of Engineering and Technology
+3.
+
+Positions of Responsibility:
+1.
+2.
+
+Technical Skills:
+Programming:python,c
+Web:html,css,javascript
+Database:sql,mysql
+Tools:git,github,vs code ,Microsoft excel,power bi
+Other::data anlysis,business analysis
+
+
+Relevant Coursework:Data Structures & Algorithms
+Database Management Systems
+Object-Oriented Programming
+Computer Networks
+Operating Systems
+Software Engineering
+Statistics

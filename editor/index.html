@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Editor Portal</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <header class="editor-header"><div><span class="eyebrow">NB / Editor Portal</span><h1>Shape the portfolio.</h1><p>Draft content safely, preview it at two sizes, then publish through the secured Netlify function.</p></div><div class="header-actions"><span id="authStatus" class="status-pill">Checking sign-in…</span><a class="button secondary" href="../" target="_blank" rel="noopener">Open public site</a><a class="button" id="signIn" href="/.netlify/functions/auth-start">Sign in with GitHub</a></div></header>
+  <main class="editor-layout">
+    <aside class="sidebar"><div class="sidebar-top"><strong>Content map</strong><button class="button small" id="newSection">+ Section</button></div><div id="sectionList" class="section-list"></div><div class="draft-card"><strong id="draftState">Draft saved locally</strong><p>Changes stay in this browser until you publish them.</p><button class="button secondary small" id="recoverDraft">Recover latest draft</button><button class="text-button" id="resetDraft">Reset to loaded content</button></div></aside>
+    <section class="workspace">
+      <div class="toolbar"><div><span class="eyebrow">Edit mode</span><h2 id="currentTitle">Site settings</h2></div><div class="toolbar-actions"><button class="button secondary" id="previewButton">Preview</button><button class="button" id="publishButton">Publish changes</button></div></div>
+      <div id="notice" class="notice" role="status"></div>
+      <form id="editorForm" class="editor-form"></form>
+    </section>
+  </main>
+  <dialog id="previewDialog" class="preview-dialog"><div class="preview-head"><div><span class="eyebrow">Preview</span><h2>Before it becomes live</h2></div><button class="icon-button" id="closePreview" aria-label="Close preview">×</button></div><div class="preview-tabs"><button class="active" data-preview-width="1440">Desktop</button><button data-preview-width="390">Mobile</button></div><iframe id="previewFrame" title="Portfolio preview"></iframe></dialog>
+  <script src="editor.js"></script>
+</body>
+</html>
